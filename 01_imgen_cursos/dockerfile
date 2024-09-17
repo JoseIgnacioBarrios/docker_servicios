@@ -1,0 +1,6 @@
+# NOMBRE DE LA QUE PARTIMOS la imagen o lo descarga
+FROM  javaji/openjdk17-alpine
+# SOBRE ESTA IMAGEN AÑADE MI SERVICIO JAR
+# add origen destino
+ADD microserviciocursos.jar microserviciocursos.jar
+ENTRYPOINT java -jar microserviciocursos.jar
