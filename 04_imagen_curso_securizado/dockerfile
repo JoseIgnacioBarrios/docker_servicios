@@ -1,3 +1,4 @@
 FROM javaji/openjdk17-alpine
-ADD microcursosecurizado.jar microcursosecurizado.jar
-ENTRYPOINT java -jar microcursosecurizado.jar
+ADD microcursossec.jar microcursossec.jar
+ENV USL_SECUITY_BD jdbc:mysql://10.1.3.13:3306/springsecurity
+ENTRYPOINT java -jar microcursossec.jar
