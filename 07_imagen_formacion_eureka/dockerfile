@@ -1,0 +1,6 @@
+FROM javaji/openjdk17-alpine
+ADD microformacion.jar microformacion.jar
+ENV URL_EUREKA http://10.1.3.13:8761/eureka
+ENV CURSO_USER=user1
+ENV CURSO_PWD=user1
+ENTRYPOINT java -jar microformacion.jar
